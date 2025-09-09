@@ -15,7 +15,8 @@ The goal is to explore the dataset, perform feature engineering, train multiple 
   - Train/Test Split & Scaling  
   - Model Training & Hyperparameter Tuning  
   - Model Evaluation  
-  - Diabetes Prediction Engine  
+  - Diabetes Prediction Engine
+- `model_performance_comparison.png` → Heatmap of model performance metrics
 - `README.md` → Project description and instructions  
 
 ---
@@ -83,6 +84,10 @@ Hyperparameter tuning with **GridSearchCV** for:
 | CatBoost              | 0.747    | 0.629     | 0.709   | 0.667    | 0.812 |
 | Voting                | 0.753    | 0.639     | 0.709   | 0.672    | 0.837 |
 | **SVM Tuned (SVMTT)** | 0.714    | 0.573     | 0.782   | 0.662    | 0.810 |
+
+### Model Performance Metrics Comparison
+
+![Model Performance Metrics Comparison](model_performance_comparison.png)
 
 ---
 
