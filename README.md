@@ -8,7 +8,7 @@ The goal is to explore the dataset, perform feature engineering, train multiple 
 
 ## 📂 Repository Structure
 - `diabetes.csv` → The raw dataset containing patient medical data  
-- `diabetes_prediction.ipynb` → Jupyter Notebook containing all steps:
+- `Diabetes.ipynb` → Jupyter Notebook containing all steps:
   - Exploratory Data Analysis (EDA)  
   - Data Visualization  
   - Data Preprocessing & Feature Engineering  
@@ -95,7 +95,7 @@ Hyperparameter tuning with **GridSearchCV** for:
 - Higher **Glucose** and **BMI** strongly correlate with diabetes.  
 - Older age increases diabetes risk.  
 - **SVM Tuned (SVMTT)** achieved the highest **Recall (0.782)** → crucial for minimizing false negatives in medical datasets.  
-- **XGBoost** and **Random Forest** maintain high Recall with slightly high Accuracy.  
+- **XGBoost** and **Random Forest** maintain high Recall despite slightly lower Accuracy.  
 - **Stacking Classifier** achieved the highest Accuracy (0.779) but lower Recall (0.655).  
 - Final model selection depends on balancing **Accuracy** and **Recall** according to project goals.
 
