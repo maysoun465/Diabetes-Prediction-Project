@@ -1,4 +1,4 @@
-# Diabetes Prediction Project - GTC ML Project
+# Diabetes Prediction Project 
 
 ## 📌 Project Overview
 This project aims to **predict diabetes in patients** using machine learning models.  
