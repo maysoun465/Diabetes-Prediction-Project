@@ -95,7 +95,7 @@ Hyperparameter tuning with **GridSearchCV** for:
 - Higher **Glucose** and **BMI** strongly correlate with diabetes.  
 - Older age increases diabetes risk.  
 - **SVM Tuned (SVMTT)** achieved the highest **Recall (0.782)** → crucial for minimizing false negatives in medical datasets.  
-- **XGBoost** and **Random Forest** maintain high Recall despite slightly lower Accuracy.  
+- **XGBoost** and **Random Forest** maintain high Recall with slightly high Accuracy.  
 - **Stacking Classifier** achieved the highest Accuracy (0.779) but lower Recall (0.655).  
 - Final model selection depends on balancing **Accuracy** and **Recall** according to project goals.
 
