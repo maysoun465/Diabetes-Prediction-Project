@@ -63,27 +63,29 @@ Models used:
 - Random Forest  
 - XGBoost  
 - CatBoost  
-- Voting Classifier (Soft)  
-- Stacking Classifier  
-
+- Stacking Classifier
+  
 Hyperparameter tuning with **GridSearchCV** for:
 - SVM  
 - Logistic Regression  
-- Random Forest  
+- Random Forest
+- LinearSVC
 
 ---
 
 ## 📊 Model Evaluation
-
-| Model                 | Accuracy | Precision | Recall  | F1-score | AUC   |
-| --------------------- | -------- | --------- | ------- | -------- | ----- |
-| Stacking              | 0.779    | 0.706     | 0.655   | 0.679    | 0.836 |
-| Random Forest         | 0.766    | 0.656     | 0.727   | 0.690    | 0.839 |
-| Logistic Regression   | 0.766    | 0.673     | 0.673   | 0.673    | 0.814 |
-| XGBoost               | 0.747    | 0.618     | 0.764   | 0.683    | 0.790 |
-| CatBoost              | 0.747    | 0.629     | 0.709   | 0.667    | 0.812 |
-| Voting                | 0.753    | 0.639     | 0.709   | 0.672    | 0.837 |
-| **SVM Tuned (SVMTT)** | 0.714    | 0.573     | 0.782   | 0.662    | 0.810 |
+| Model                   | Accuracy | Precision | Recall  | F1-score | AUC   |
+| ----------------------- | -------- | --------- | ------- | -------- | ----- |
+| **Stacking**            | 0.877    | 0.810     | 0.855   | 0.832    | 0.929 |
+| **Random Forest Tuned** | 0.877    | 0.810     | 0.855   | 0.832    | 0.933 |
+| **CatBoost**            | 0.877    | 0.821     | 0.836   | 0.829    | 0.935 |
+| SVM                     | 0.870    | 0.830     | 0.800   | 0.815    | 0.887 |
+| Random Forest           | 0.864    | 0.793     | 0.836   | 0.814    | 0.930 |
+| XGBoost                 | 0.851    | 0.786     | 0.800   | 0.793    | 0.935 |
+| **SVM Tuned**           | 0.818    | 0.680     | 0.927   | 0.785    | 0.912 |
+| Logistic Regression     | 0.818    | 0.737     | 0.764   | 0.750    | 0.869 |
+| Linear SVC              | 0.805    | 0.667     | 0.909   | 0.769    | 0.867 |
+| Logistic Regression Tuned | 0.766  | 0.620     | 0.891   | 0.731    | 0.877 |
 
 ### Model Performance Metrics Comparison
 
@@ -91,13 +93,13 @@ Hyperparameter tuning with **GridSearchCV** for:
 
 ---
 
-## 📈 Key Insights
+## 📈 Key Insights  
 - Higher **Glucose** and **BMI** strongly correlate with diabetes.  
 - Older age increases diabetes risk.  
-- **SVM Tuned (SVMTT)** achieved the highest **Recall (0.782)** → crucial for minimizing false negatives in medical datasets.  
+- **SVM Tuned** achieved the highest **Recall (0.927)** → crucial for minimizing false negatives in medical datasets.  
 - **XGBoost** and **Random Forest** maintain high Recall despite slightly lower Accuracy.  
-- **Stacking Classifier** achieved the highest Accuracy (0.779) but lower Recall (0.655).  
-- Final model selection depends on balancing **Accuracy** and **Recall** according to project goals.
+- **Stacking Classifier** and **Random Forest Tuned** achieved the highest Accuracy (~0.877).  
+- Final model selection depends on balancing **Accuracy** and **Recall** according to project goals. 
 
 ---
 
